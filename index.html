@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دليل فعاليات الجامعة - الصفحة الرئيسية</title>
+  <!-- Bootstrap 5 RTL CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ====== Navbar ====== -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-mortarboard-fill"></i>
+        دليل فعاليات الجامعة
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house-door"></i> الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html"><i class="bi bi-calendar-event"></i> الفعاليات</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> عن الدليل</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> اتصل بنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== Hero Section ====== -->
+  <header class="hero-section">
+    <img src="img/hero-bg.jpg" alt="University Campus" class="hero-bg" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <h1>دليل فعاليات الجامعة</h1>
+      <p>اكتشف جميع الفعاليات والأنشطة الجامعية في مكان واحد، وكن على اطلاع دائم بكل ما يحدث في حرم الجامعة.</p>
+      <div class="hero-badges mb-4">
+        <span class="hero-badge"><i class="bi bi-palette"></i> ثقافي</span>
+        <span class="hero-badge"><i class="bi bi-trophy"></i> رياضي</span>
+        <span class="hero-badge"><i class="bi bi-brush"></i> فني</span>
+        <span class="hero-badge"><i class="bi bi-code-slash"></i> تقني</span>
+      </div>
+      <a href="events.html" class="btn btn-secondary-custom btn-lg">
+        <i class="bi bi-compass"></i> استكشف الفعاليات
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ====== Weekly Events Section ====== -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>فعاليات هذا الأسبوع</h2>
+          <p>لا تفوت الفعاليات القادمة هذا الأسبوع في الجامعة</p>
+        </div>
+        <div class="row" id="weeklyEvents">
+          <!-- Populated by JavaScript -->
+          <div class="col-12 text-center py-4 text-muted">
+            <i class="bi bi-arrow-repeat spin"></i> جاري التحميل...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Quick Categories Section ====== -->
+    <section class="py-5">
+      <div class="container">
+        <div class="section-header">
+          <h2>تصفح حسب النوع</h2>
+          <p>اختر نوع الفعالية التي تهمك واستكشف ما يناسبك</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <a href="events.html?category=cultural" class="text-decoration-none">
+              <div class="category-card">
+                <i class="bi bi-palette" style="color: #8e44ad;"></i>
+                <h5>ثقافي</h5>
+                <p>فعاليات ثقافية وتراثية</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-6">
+            <a href="events.html?category=sports" class="text-decoration-none">
+              <div class="category-card">
+                <i class="bi bi-trophy" style="color: #27ae60;"></i>
+                <h5>رياضي</h5>
+                <p>بطولات وفعاليات رياضية</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-6">
+            <a href="events.html?category=art" class="text-decoration-none">
+              <div class="category-card">
+                <i class="bi bi-brush" style="color: #e74c3c;"></i>
+                <h5>فني</h5>
+                <p>معارض فنية وعروض</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-6">
+            <a href="events.html?category=tech" class="text-decoration-none">
+              <div class="category-card">
+                <i class="bi bi-code-slash" style="color: #2980b9;"></i>
+                <h5>تقني</h5>
+                <p>هاكاثون وورش تقنية</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Latest News Carousel Section ====== -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>أحدث الفعاليات</h2>
+          <p>تعرف على آخر الفعاليات والأنشطة المنظمة في الجامعة</p>
+        </div>
+        <div id="newsCarousel" class="carousel slide news-carousel" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/real-graduation.jpg" class="d-block w-100" alt="مهرجان التراث الثقافي">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>مهرجان التراث الثقافي السوري</h5>
+                <p>احتفال بالتراث الثقافي السوري يتضمن عروضاً للفنون الشعبية والموسيقى التقليدية</p>
+                <a href="event.html?id=1" class="btn btn-secondary-custom btn-sm">التفاصيل</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/real-sports.jpg" class="d-block w-100" alt="بطولة كرة القدم">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>بطولة كرة القدم الجامعية</h5>
+                <p>بطولة كرة القدم السنوية بين كليات الجامعة بروح رياضية تنافسية</p>
+                <a href="event.html?id=2" class="btn btn-secondary-custom btn-sm">التفاصيل</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/real-programming.jpg" class="d-block w-100" alt="هاكاثون البرمجة">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>هاكاثون البرمجة والابتكار</h5>
+                <p>تحدي برمجة على مدار 48 ساعة للطلاب المهتمين بتطوير البرمجيات</p>
+                <a href="event.html?id=4" class="btn btn-secondary-custom btn-sm">التفاصيل</a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Featured Events Section ====== -->
+    <section class="py-5">
+      <div class="container">
+        <div class="section-header">
+          <h2>فعاليات مميزة</h2>
+          <p>اخترنا لك مجموعة من أبرز الفعاليات القادمة</p>
+        </div>
+        <div class="row" id="featuredEvents">
+          <!-- Populated by JavaScript -->
+          <div class="col-12 text-center py-4 text-muted">
+            <i class="bi bi-arrow-repeat"></i> جاري التحميل...
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="events.html" class="btn btn-outline-custom">
+            <i class="bi bi-grid"></i> عرض جميع الفعاليات
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Project Participants Section (REQUIRED for submission) ====== -->
+    <!-- استبدل الأسماء والأرقام الجامعية (ID) أدناه بأسماء وأرقام أعضاء فريقك الحقيقيين -->
+    <section class="py-5 bg-light" id="team">
+      <div class="container">
+        <div class="section-header">
+          <h2>فريق المشروع</h2>
+          <p>الطلاب المشاركون في إعداد مشروع دليل فعاليات الجامعة</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="participant-card">
+              <i class="bi bi-person-circle"></i>
+              <h6>الاسم الكامل للطالب 1</h6>
+              <span class="participant-id">ID: 000000</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="participant-card">
+              <i class="bi bi-person-circle"></i>
+              <h6>الاسم الكامل للطالب 2</h6>
+              <span class="participant-id">ID: 000000</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="participant-card">
+              <i class="bi bi-person-circle"></i>
+              <h6>الاسم الكامل للطالب 3</h6>
+              <span class="participant-id">ID: 000000</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="participant-card">
+              <i class="bi bi-person-circle"></i>
+              <h6>الاسم الكامل للطالب 4</h6>
+              <span class="participant-id">ID: 000000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h5><i class="bi bi-mortarboard-fill"></i> دليل فعاليات الجامعة</h5>
+          <p>منصة شاملة لإرشاد الطلاب إلى جميع الفعاليات والأنشطة الجامعية المتنوعة.</p>
+          <div class="social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5>روابط سريعة</h5>
+          <a href="index.html">الرئيسية</a>
+          <a href="events.html">الفعاليات</a>
+          <a href="about.html">عن الدليل</a>
+          <a href="contact.html">اتصل بنا</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>أنواع الفعاليات</h5>
+          <a href="events.html?category=cultural">فعاليات ثقافية</a>
+          <a href="events.html?category=sports">فعاليات رياضية</a>
+          <a href="events.html?category=art">فعاليات فنية</a>
+          <a href="events.html?category=tech">فعاليات تقنية</a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>تواصل معنا</h5>
+          <p><i class="bi bi-geo-alt"></i> الجامعة الافتراضية السورية</p>
+          <p><i class="bi bi-envelope"></i> activities@svuonline.org</p>
+          <p><i class="bi bi-telephone"></i> +963-11-xxx-xxxx</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; 2026 دليل فعاليات الجامعة الافتراضية السورية</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="scroll-top-btn" title="العودة للأعلى">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle" class="dark-mode-toggle" title="تبديل الوضع الداكن">
+    <i class="bi bi-moon-fill"></i>
+  </button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
